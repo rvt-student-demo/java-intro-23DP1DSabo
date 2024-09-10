@@ -8,20 +8,20 @@ public class App
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ievadiet savu vārdu: ");
-        String vards = scanner.nextLine();
+        System.out.println("Ievadiet vienu skaitli: ");
+        String ievadeViena = scanner.nextLine();
+        int viensSkaitlis = Integer.valueOf(ievadeViena);
+
         System.out.println("");
 
-        System.out.println("Ievadet savu uzvārdu: ");
-        String uzvards = scanner.nextLine();
+        System.out.println("Ievadiet otru skaitli: ");
+        String ievadeOtra = scanner.nextLine();
+        int otrsSkaitlis = Integer.valueOf(ievadeOtra);
+
         System.out.println("");
 
-        System.out.println("Ievadiet savu grupu: ");
-        String grupa = scanner.nextLine();
-        System.out.println("");
-
-
-        System.out.println("Students: " + vards + " " + uzvards + ", grupa: " + grupa);
+        System.out.println(viensSkaitlis * otrsSkaitlis);
+        
 
 
 
