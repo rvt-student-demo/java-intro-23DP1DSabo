@@ -8,21 +8,17 @@ public class App
 
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ievadiet vienu skaitli: ");
-        String ievadeViena = scanner.nextLine();
-        int viensSkaitlis = Integer.valueOf(ievadeViena);
+        int Cipars1 = Integer.valueOf(scanner.nextLine());
+        int Cipars2 = Integer.valueOf(scanner.nextLine());
+        int Cipars3 = Integer.valueOf(scanner.nextLine());
 
-        System.out.println("");
+        int sum = Cipars1 + Cipars2 + Cipars3;
+        int reiz = Cipars1 * Cipars2 * Cipars3;
+        double vid = sum / 3.0;
 
-        System.out.println("Ievadiet otru skaitli: ");
-        String ievadeOtra = scanner.nextLine();
-        int otrsSkaitlis = Integer.valueOf(ievadeOtra);
-
-        System.out.println("");
-
-        System.out.println(viensSkaitlis * otrsSkaitlis);
-        
-
+        System.out.println("Šo skaitļu summa: " + sum);
+        System.out.println("Šo skaitļu reizinājums: " + reiz);
+        System.out.println("Šo skaitļu vidējā vērtība: " + vid);
 
 
     }
