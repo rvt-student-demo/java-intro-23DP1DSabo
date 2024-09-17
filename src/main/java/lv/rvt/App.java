@@ -7,19 +7,28 @@ public class App
     {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Give the first number: ");
-        int numberOne = Integer.valueOf(scanner.nextLine());
+        System.out.println("Give points [0-100]: ");
+        int atzime = Integer.valueOf(scanner.nextLine());
 
-        System.out.println("Give the second number: ");
-        int numberTwo = Integer.valueOf(scanner.nextLine());
-
-        if (numberOne > numberTwo) {
-            System.out.println("Greater number is: " + numberOne);
-        } else if (numberTwo > numberOne) {
-            System.out.println("Greater number is: " + numberTwo);
+        if (atzime < 0) {
+            System.out.println("impossible!");
+        } else if (0 < atzime && atzime < 49) {
+            System.out.println("failed!");
+        } else if (50 < atzime && atzime < 59) {
+            System.out.println('1');
+        } else if (60 < atzime && atzime < 69) {
+            System.out.println('2');
+        } else if (70 < atzime && atzime < 79) {
+            System.out.println('3');
+        } else if (80 < atzime && atzime < 89) {
+            System.out.println('4');
+        } else if (90 < atzime && atzime < 100) {
+            System.out.println('5');
         } else {
-            System.out.println("The numbers are equal!");
+            System.out.println("Incredible!");
         }
+
+
 
 
 
