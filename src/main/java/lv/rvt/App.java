@@ -7,28 +7,34 @@ public class App
     {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Give points [0-100]: ");
-        int atzime = Integer.valueOf(scanner.nextLine());
-
-        if (atzime < 0) {
-            System.out.println("impossible!");
-        } else if (0 < atzime && atzime < 49) {
-            System.out.println("failed!");
-        } else if (50 < atzime && atzime < 59) {
-            System.out.println('1');
-        } else if (60 < atzime && atzime < 69) {
-            System.out.println('2');
-        } else if (70 < atzime && atzime < 79) {
-            System.out.println('3');
-        } else if (80 < atzime && atzime < 89) {
-            System.out.println('4');
-        } else if (90 < atzime && atzime < 100) {
-            System.out.println('5');
-        } else {
-            System.out.println("Incredible!");
+        System.out.println("Value of the gift? ");
+        int nauda = Integer.valueOf(scanner.nextLine());
+        if (nauda < 5000) {
+            System.out.println("No tax!");
         }
-
-
+        else if (nauda >= 5000 && nauda <= 25000) {
+             double tax = (100 + (nauda - 5000) * 0.08);
+             System.out.println("Tax: " + tax);
+        }
+         else if (nauda > 25000 && nauda <= 55000) {
+            double tax = (1700 + (nauda - 25000) * 0.08);
+            System.out.println("Tax: " + tax);
+         }
+        else if (nauda > 55000 && nauda <= 200000) {
+            double tax = (4700 + (nauda - 55000) * 0.08);
+            System.out.println("Tax: " + tax);
+        }
+        else if (nauda > 200000 && nauda <= 1000000) {
+            double tax = (22100 + (nauda - 200000) * 0.08);
+            System.out.println("Tax: " + tax);
+        }
+        else if (nauda > 1000000) {
+            double tax = (142100 + (nauda - 100000) * 0.08);
+            System.out.println("Tax: " + tax);
+        }
+        else {
+            System.out.println("Nederīga ievade");
+        }
 
 
 
