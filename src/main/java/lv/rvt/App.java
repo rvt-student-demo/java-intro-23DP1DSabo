@@ -17,19 +17,19 @@ public class App
              System.out.println("Tax: " + tax);
         }
          else if (nauda > 25000 && nauda <= 55000) {
-            double tax = (1700 + (nauda - 25000) * 0.08);
+            double tax = (1700 + (nauda - 25000) * 0.1);
             System.out.println("Tax: " + tax);
          }
         else if (nauda > 55000 && nauda <= 200000) {
-            double tax = (4700 + (nauda - 55000) * 0.08);
+            double tax = (4700 + (nauda - 55000) * 0.12);
             System.out.println("Tax: " + tax);
         }
         else if (nauda > 200000 && nauda <= 1000000) {
-            double tax = (22100 + (nauda - 200000) * 0.08);
+            double tax = (22100 + (nauda - 200000) * 0.15);
             System.out.println("Tax: " + tax);
         }
         else if (nauda > 1000000) {
-            double tax = (142100 + (nauda - 100000) * 0.08);
+            double tax = (142100 + (nauda - 100000) * 0.17);
             System.out.println("Tax: " + tax);
         }
         else {
