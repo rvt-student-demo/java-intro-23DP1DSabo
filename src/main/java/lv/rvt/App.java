@@ -29,7 +29,7 @@ public class App
             System.out.println("Tax: " + tax);
         }
         else if (nauda > 1000000) {
-            double tax = (142100 + (nauda - 100000) * 0.17);
+            double tax = (142100 + (nauda - 1000000) * 0.17);
             System.out.println("Tax: " + tax);
         }
         else {
