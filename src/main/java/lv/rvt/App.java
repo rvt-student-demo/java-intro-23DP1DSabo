@@ -5,38 +5,20 @@ public class App
 {
     public static void main( String[] args )
     {
+        int k = 0;
+        int sum = 0;
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Value of the gift? ");
-        int nauda = Integer.valueOf(scanner.nextLine());
-        if (nauda < 5000) {
-            System.out.println("No tax!");
+        while (true) {
+            System.out.println("Give a number: ");
+            int numero = Integer.valueOf(scanner.nextLine());
+            if (numero == 0) {
+                break;
+            }
+            sum = sum + numero;
+            k += 1;
         }
-        else if (nauda >= 5000 && nauda <= 25000) {
-             double tax = (100 + (nauda - 5000) * 0.08);
-             System.out.println("Tax: " + tax);
+    System.out.println("Number of numbers: " + k);
+    System.out.println("Sum of the numbers: " + sum);
         }
-         else if (nauda > 25000 && nauda <= 55000) {
-            double tax = (1700 + (nauda - 25000) * 0.1);
-            System.out.println("Tax: " + tax);
-         }
-        else if (nauda > 55000 && nauda <= 200000) {
-            double tax = (4700 + (nauda - 55000) * 0.12);
-            System.out.println("Tax: " + tax);
-        }
-        else if (nauda > 200000 && nauda <= 1000000) {
-            double tax = (22100 + (nauda - 200000) * 0.15);
-            System.out.println("Tax: " + tax);
-        }
-        else if (nauda > 1000000) {
-            double tax = (142100 + (nauda - 1000000) * 0.17);
-            System.out.println("Tax: " + tax);
-        }
-        else {
-            System.out.println("Nederīga ievade");
-        }
-
-
-
     }
-}
