@@ -21,7 +21,7 @@ public class App
             }
             sum += numero;
             n += 1;
-            avg = sum / n;
+            avg = (double)sum / n;
             if (numero % 2 == 0) {
                 even += 1;
             }
