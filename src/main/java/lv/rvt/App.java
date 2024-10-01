@@ -5,17 +5,16 @@ public class App
 {
     public static void main( String[] args )
     {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("How many times?");
-        int numero = Integer.valueOf(scanner.nextLine());
-
-        printText(numero);
+        divisionByThreeInRange(5, 24);
     }
 
-    public static void printText(int numero) {
-        for(int i = 0; i < numero; i++) {
-            System.out.println("In a hole in the ground there lived a method");
+    public static void divisionByThreeInRange(int x, int y) {
+        for (int i = x; i < y + 1; i++) {
+            if (i % 3 == 0) {
+                System.out.println(i);
+            }
         }
     }
 }
+
     
