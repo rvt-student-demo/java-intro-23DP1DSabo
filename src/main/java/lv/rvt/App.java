@@ -5,17 +5,38 @@ public class App
 {
     public static void main( String[] args )
     {
-        Scanner scanner = new Scanner(System.in);
-        
-        System.out.println("Last number? ");
-        int end = Integer.valueOf(scanner.nextLine());
-        int start = 1;
+
         int sum = 0;
-        for (int i = start; i < end + 1; i++) {
-            sum = sum + i;
-        }  
-        System.out.println("The sum is " + sum);
+        int n = 0;
+        double avg = 0;
+        int even = 0;
+        int odd = 0;
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Give numbers:");
+        while (true) {
+            int numero = Integer.valueOf(scanner.nextLine());
+            if (numero == -1) {
+                break;
+            }
+            sum += numero;
+            n += 1;
+            avg = sum / n;
+            if (numero % 2 == 0) {
+                even += 1;
+            }
+            if (numero % 2 == 1) {
+                odd += 1;
+            }
+        }
+
+        System.out.println("Thx bye!");
+        System.out.println("Sum: " + sum);
+        System.out.println("Numbers: " + n);
+        System.out.println("Average: " + avg);
+        System.out.println("Even: " + even);
+        System.out.println("Odd: " + odd);
 
         }
-        }
+    }
     
