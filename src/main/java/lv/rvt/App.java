@@ -5,12 +5,12 @@ public class App
 {
     public static void main( String[] args )
     {
-        printSquare(4); 
+        printRectangle(17, 3); 
     }
 
-    public static void printSquare(int size) {
-        for (int i = 0; i < size; i++) {
-            for (int j = 0; j < size; j++) {
+    public static void printRectangle(int width, int height) {
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
                 System.out.print("*");
             }
             System.out.println();
