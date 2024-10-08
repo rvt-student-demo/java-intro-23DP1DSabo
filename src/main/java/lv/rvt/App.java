@@ -5,15 +5,16 @@ public class App
 {
     public static void main( String[] args )
     {
-        divisionByThreeInRange(5, 24);
+        printStars(5); 
+        printStars(3); 
+        printStars(9); 
     }
 
-    public static void divisionByThreeInRange(int x, int y) {
-        for (int i = x; i < y + 1; i++) {
-            if (i % 3 == 0) {
-                System.out.println(i);
-            }
+    public static void printStars(int number) {
+        for (int i = 1; i < number + 1; i++) {
+            System.out.print("*");
         }
+        System.out.println();
     }
 }
 
