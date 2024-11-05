@@ -9,7 +9,7 @@ public class App
 
         counter.printValue();
 
-        counter.decrement();
+        counter.reset();
         counter.printValue();
 
         counter.decrement();
