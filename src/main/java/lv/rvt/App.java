@@ -5,30 +5,14 @@ public class App
 {
     public static void main( String[] args ) {
 
-        Person pekka = new Person("Pekka");
-        Person antti = new Person("Antti");
-    
-        int i = 0;
-        while (i < 30) {
-            pekka.growOlder();
-            i = i + 1;
-        }
-    
-        antti.growOlder();
-    
-        System.out.println("");
-    
-        if (antti.isOfLegalAge()) {
-            System.out.println(antti.getName() + " is of legal age");
-        } else {
-            System.out.println(antti.getName() + " is underage");
-        }
-    
-        if (pekka.isOfLegalAge()) {
-            System.out.println(pekka.getName() + " is of legal age");
-        } else {
-            System.out.println(pekka.getName() + " is underage ");
-        } 
+        Scanner scanner = new Scanner(System.in);
+
+        Animal animal1 = new Animal("cat");
+        Animal animal2 = new Animal("lobster");
+
+        System.out.println(animal1);
+
+        String animalAsString = animal1.toString();
 
     }
 
