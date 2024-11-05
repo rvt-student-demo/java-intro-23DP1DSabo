@@ -1,18 +1,18 @@
 package lv.rvt;
 
 import java.util.*;
-public class App 
-{
+public class App {
     public static void main( String[] args ) {
 
-        Agent bond = new Agent("James", "Bond");
-
-        bond.toString();
-        System.out.println(bond);
-
-        Agent ionic = new Agent("Ionic", "Bond");
-        System.out.println(ionic);
-
+        Statistics statistics = new Statistics();
+        statistics.addNumber(3);
+        statistics.addNumber(5);
+        statistics.addNumber(1);
+        statistics.addNumber(2);
+        System.out.println("Count: " + statistics.getCount());
+        System.out.println("Sum: " + statistics.sum());
+        System.out.println("Average: " + statistics.average());
     }
 
-} 
+
+}
