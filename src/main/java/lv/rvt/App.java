@@ -1,18 +1,17 @@
 package lv.rvt;
-
+import java.io.BufferedReader;
 import java.util.*;
+
+
 public class App {
-    public static void main( String[] args ) {
+    public static void main( String[] args ) throws Exception {
 
-            PaymentCard card = new PaymentCard(50);
-            System.out.println(card);
+            BufferedReader reader = Utils.getReader("data.csv");
+            String line;
 
-            card.eatAffordably();
-            System.out.println(card);
-
-            card.eatHeartily();
-            card.eatAffordably();
-            System.out.println(card);
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
 
     }
 }
