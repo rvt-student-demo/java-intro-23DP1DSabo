@@ -10,7 +10,7 @@ public class Statistics {
     }
 
     public void addNumber(int number) {
-        
+
     }
 
     public int getCount() {
@@ -18,7 +18,7 @@ public class Statistics {
     }
 
     public int sum() {
-        sum += this.count;
+    
     }
 
     public double average() {

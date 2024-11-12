@@ -4,15 +4,15 @@ import java.util.*;
 public class App {
     public static void main( String[] args ) {
 
-        Statistics statistics = new Statistics();
-        statistics.addNumber(3);
-        statistics.addNumber(5);
-        statistics.addNumber(1);
-        statistics.addNumber(2);
-        System.out.println("Count: " + statistics.getCount());
-        System.out.println("Sum: " + statistics.sum());
-        System.out.println("Average: " + statistics.average());
+            PaymentCard card = new PaymentCard(50);
+            System.out.println(card);
+
+            card.eatAffordably();
+            System.out.println(card);
+
+            card.eatHeartily();
+            card.eatAffordably();
+            System.out.println(card);
+
     }
-
-
 }
