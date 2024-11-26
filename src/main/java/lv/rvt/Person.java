@@ -6,11 +6,16 @@ public class Person {
     private int weight;
     private int height;
 
-    public Person(String initialName) {
-        this.age = 0;
+    public Person(String initialName, int initialAge, int initialWeight, int initialHeight) {
+        
         this.name = initialName;
-        this.weight = 0;
-        this.height = 0;
+        this.age = initialAge;
+        this.weight = initialWeight;
+        this.height = initialHeight;
+    }
+
+    public Person(String initialName) {   
+        this.name = initialName;
     }
 
     public void printPerson() {

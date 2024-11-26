@@ -20,4 +20,26 @@ public class DecreasingCounter {
     public void reset() {
         this.value = 0;
     }
+
+    public Counter(int startValue) {
+        this.start = startValue;
+        
+    }
+
+    public Counter() {
+        value = 0;
+    }
+
+    public int vaalue() {
+        return value;
+    }
+
+    public void increase() {
+        value = value + 1;
+    }
+
+    public void decrease() {
+        value = value - 1;
+    }
+
 }
