@@ -9,8 +9,12 @@ public class App {
 
         BufferedReader reader = Helper.getReader("persons.csv");
 
-        String row1 = reader.readLine();
-        System.out.println(row1);
+        String row;
+        reader.readLine(); //ignorē Title row
+        while ((row = reader.readLine()) != null) {
+            System.out.println(row);
+        }
+        
 
 }
 }
