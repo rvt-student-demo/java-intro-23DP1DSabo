@@ -21,15 +21,6 @@ public class DecreasingCounter {
         this.value = 0;
     }
 
-    public Counter(int startValue) {
-        this.start = startValue;
-        
-    }
-
-    public Counter() {
-        value = 0;
-    }
-
     public int vaalue() {
         return value;
     }

@@ -4,15 +4,13 @@ import java.util.*;
 
 
 public class App {
+
     public static void main( String[] args ) throws Exception {
 
-        Product tapeMeasure = new Product("Tape measure");
-        Product plaster = new Product("Plaster", "home improvement section");
-        Product tyre = new Product("Tyre", 5);
+        BufferedReader reader = Helper.getReader("persons.csv");
 
-        System.out.println(tapeMeasure);
-        System.out.println(plaster);
-        System.out.println(tyre);
+        String row1 = reader.readLine();
+        System.out.println(row1);
 
 }
 }

@@ -6,7 +6,6 @@ public class Account {
     private String owner;
 
     public Account(String owner, double amount) {
-        this.balance = balance;
         this.owner = owner;
     }
 
