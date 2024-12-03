@@ -55,4 +55,15 @@ public class Person {
         double heigthPerHundred = this.height / 100.0;
         return this.weight / (heigthPerHundred * heigthPerHundred);
     }
+
+    public String CsvRow() {
+        return this.name + ", " + this.age + ", " + this.weight + ", " + this.height;
+    }
+
+
+
+
+
+
+
 }
