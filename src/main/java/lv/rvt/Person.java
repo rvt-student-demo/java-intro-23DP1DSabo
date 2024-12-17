@@ -5,6 +5,7 @@ public class Person {
     private int age;
     private int weight;
     private int height;
+    private SimpleDate birthday;
 
     public Person(String initialName, int initialAge, int initialWeight, int initialHeight) {   
         this.name = initialName;
@@ -60,10 +61,21 @@ public class Person {
         return this.name + ", " + this.age + ", " + this.weight + ", " + this.height;
     }
 
+    public String getName {
+        return this.name;
+    }
 
+    public int getAge {
 
+    }
 
+    public int getWeight {
 
+    }
+
+    public int getHeight {
+
+    }
 
 
 }
