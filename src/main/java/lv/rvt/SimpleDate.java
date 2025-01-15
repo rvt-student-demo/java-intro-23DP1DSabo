@@ -24,6 +24,17 @@ public class SimpleDate {
     }
 
     @Override
+    public boolean equals(Object object) {
+        if (object instanceof SimpleDate == false) {
+            return false;
+        }
+        SimpleDate comparedObject = (SimpleDate) object;
+        if (this.day == comparedObject.getDay() && 
+        this.month == comparedObject.getMonth() && 
+        this.year == comparedObject.getYear())
+    }
+
+    @Override
     public String toString() {
         return this.day + "." + this.month + "." + this.year;
     }
