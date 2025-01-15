@@ -22,7 +22,7 @@ public double volume() {
     return width * length * height;
 }
 
-double area() {
+public double area() {
   return 2 * faceArea() + 2 * topArea() + 2 * sideArea() ;              
 }
 
@@ -41,6 +41,27 @@ public double sideArea() {
 public Box( Box oldBox ) {
     
 }
+
+public double length() {
+    return length;
+}
+public double height() {
+    return height;
+}
+public double width() {
+    return width;
+}
+
+public Box biggerBox(Box oldBox) {
+    return new Box( 1.25*oldBox.width(), 1.25*oldBox.length(), 1.25*oldBox.height())
+}
+
+public boolean nests(Box outsideBox) {
+    if () {
+
+    }
+}
+
 
 }
 
