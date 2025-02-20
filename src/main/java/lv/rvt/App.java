@@ -49,8 +49,13 @@ public class App {
 
         // System.out.println(manhattanStudioApt.largerThan(atlantaTwoBedroomApt));       // false
         // System.out.println(bangorThreeBedroomApt.largerThan(atlantaTwoBedroomApt));  // true
-
-        
+    
+        System.out.println(book1);
+        System.out.println(book2);
+        System.out.println(book3);
+        System.out.println(cd1);
+        System.out.println(cd2);
+        System.out.println(cd3);
 
 
 
