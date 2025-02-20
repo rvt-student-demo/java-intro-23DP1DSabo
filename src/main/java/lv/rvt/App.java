@@ -50,15 +50,15 @@ public class App {
         // System.out.println(manhattanStudioApt.largerThan(atlantaTwoBedroomApt));       // false
         // System.out.println(bangorThreeBedroomApt.largerThan(atlantaTwoBedroomApt));  // true
 
-        for (int i=0; i<60; i++) {
-            if (i > 0 && i < 20) {
-            System.out.println(ConsoleColors.BLUE_BACKGROUND);
+        for (int i=0; i<30; i++) {
+            if (i > 0 && i < 11) {
+            System.out.println(ConsoleColors.RED_BACKGROUND);
             }  
-            if (i > 20 && i < 40) {
-                System.out.println(ConsoleColors.BLACK_BACKGROUND);
-            } 
-            if (i > 40) {
+            if (i > 11 && i < 19) {
                 System.out.println(ConsoleColors.WHITE_BACKGROUND);
+            } 
+            if (i > 19) {
+                System.out.println(ConsoleColors.RED_BACKGROUND);
             }
 
 }
