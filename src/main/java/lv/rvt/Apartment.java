@@ -10,19 +10,4 @@ public class Apartment {
         this.squares = squares;
         this.pricePerSquare = pricePerSquare;
     }
-
-    public int priceDifference(Apartment compared) {
-        d
-    }
-
-    public boolean moreExpensiveThan(Apartment compared) {
-        d
-    }
-
-    public boolean largerThan(Apartment compared) {
-        d
-    }
-
-
-
 }

@@ -40,9 +40,7 @@ public class Person {
         return true;
     }
 
-    public String toString() {
-        return this.name + ", age " + this.age + " years, my body mass index is " + bodyMassIndex();
-    }
+
 
     public void setHeight(int newHeight) {
         this.height = newHeight;
@@ -51,31 +49,4 @@ public class Person {
     public void setWeight(int newWeight) {
         this.weight = newWeight;
     }
-
-    public double bodyMassIndex() {
-        double heigthPerHundred = this.height / 100.0;
-        return this.weight / (heigthPerHundred * heigthPerHundred);
-    }
-
-    public String CsvRow() {
-        return this.name + ", " + this.age + ", " + this.weight + ", " + this.height;
-    }
-
-    public String getName {
-        return this.name;
-    }
-
-    public int getAge {
-
-    }
-
-    public int getWeight {
-
-    }
-
-    public int getHeight {
-
-    }
-
-
 }

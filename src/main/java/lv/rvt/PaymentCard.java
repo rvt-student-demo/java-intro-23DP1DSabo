@@ -7,9 +7,7 @@ public class PaymentCard {
         // write code here
     }
 
-    public String toString() {
-        // write code here
-    }
+
 
     public void eatAffordably() {
         // write code here

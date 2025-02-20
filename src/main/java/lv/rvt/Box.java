@@ -52,16 +52,6 @@ public double width() {
     return width;
 }
 
-public Box biggerBox(Box oldBox) {
-    return new Box( 1.25*oldBox.width(), 1.25*oldBox.length(), 1.25*oldBox.height())
-}
-
-public boolean nests(Box outsideBox) {
-    if () {
-
-    }
-}
-
 
 }
 

@@ -49,18 +49,17 @@ public class App {
 
         // System.out.println(manhattanStudioApt.largerThan(atlantaTwoBedroomApt));       // false
         // System.out.println(bangorThreeBedroomApt.largerThan(atlantaTwoBedroomApt));  // true
-    
-        System.out.println(book1);
-        System.out.println(book2);
-        System.out.println(book3);
-        System.out.println(cd1);
-        System.out.println(cd2);
-        System.out.println(cd3);
 
-
-
-
-
+        for (int i=0; i<60; i++) {
+            if (i > 0 && i < 20) {
+            System.out.println(ConsoleColors.BLUE_BACKGROUND);
+            }  
+            if (i > 20 && i < 40) {
+                System.out.println(ConsoleColors.BLACK_BACKGROUND);
+            } 
+            if (i > 40) {
+                System.out.println(ConsoleColors.WHITE_BACKGROUND);
+            }
 
 }
 
@@ -71,4 +70,5 @@ public class App {
 //public static void modify(int value) {
 //    value+=5;
 //}
+}
 }
