@@ -50,25 +50,43 @@ public class App {
         // System.out.println(manhattanStudioApt.largerThan(atlantaTwoBedroomApt));       // false
         // System.out.println(bangorThreeBedroomApt.largerThan(atlantaTwoBedroomApt));  // true
 
-        for (int i=0; i<30; i++) {
-            if (i > 0 && i < 11) {
-            System.out.println(ConsoleColors.RED_BACKGROUND);
-            }  
-            if (i > 11 && i < 19) {
-                System.out.println(ConsoleColors.WHITE_BACKGROUND);
-            } 
-            if (i > 19) {
-                System.out.println(ConsoleColors.RED_BACKGROUND);
-            }
 
-}
+        //public static void modify(Person person) {
+        //    person.setName("Modified!");
+        //}
 
-//public static void modify(Person person) {
-//    person.setName("Modified!");
-//}
+        //public static void modify(int value) {
+        //    value+=5;
+        //}
 
-//public static void modify(int value) {
-//    value+=5;
-//}
+
+        // for (int i=0; i<30; i++) {
+        //     if (i > 0 && i < 11) {
+        //     System.out.println(ConsoleColors.RED_BACKGROUND);
+        //     }  
+        //     if (i > 11 && i < 19) {
+        //         System.out.println(ConsoleColors.WHITE_BACKGROUND);
+        //     } 
+        //     if (i > 19) {
+        //         System.out.println(ConsoleColors.RED_BACKGROUND);
+        //     }
+        // }
+
+        Money a = new Money(10,0);
+        Money b = new Money(5,0);
+        
+        Money c = a.plus(b);
+        
+        System.out.println(a);  // 10.00e
+        System.out.println(b);  // 5.00e
+        System.out.println(c);  // 15.00e
+        
+        a = a.plus(c);          // NB: a new Money object is created, and is placed "at the end of the strand connected to a"
+        //  the old 10 euros at the end of the strand disappears and the Java garbage collector takes care of it
+            System.out.println(" ");
+        System.out.println(a);  // 25.00e
+        System.out.println(b);  // 5.00e
+        System.out.println(c);  // 15.00e
+
 }
 }
